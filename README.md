@@ -71,9 +71,19 @@ Expliquez votre solution ici
 
 _Votre réponse pour l'exercice 2 :_
 ```
+Création du LanguageContext :
+J'ai créé un contexte (LanguageContext) dans App.js pour gérer et partager la langue choisie dans l'application. Ce contexte utilise useState pour stocker la langue actuelle et une fonction setLanguage pour la mettre à jour.
+
+Création du LanguageSelector :
+J'ai développé un composant LanguageSelector qui permet à l'utilisateur de choisir la langue. Ce composant met à jour la langue dans le contexte lors d'un changement de sélection.
+
+Mise à jour des composants enfants :
+Les composants enfants utilisent LanguageContext pour accéder à la langue sélectionnée et afficher les informations dans la langue choisie.
+
 Expliquez votre solution ici
 [Ajoutez vos captures d'écran]
 ```
+![Texte alternatif](src/images/exo2.PNG)
 
 ### Exercice 3 : Hooks Personnalisés
 #### Objectif : Créer des hooks réutilisables
