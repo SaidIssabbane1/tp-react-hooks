@@ -53,9 +53,13 @@ Pour chaque exercice :
 
 _Votre réponse pour l'exercice 1 :_
 ```
+1.1 Modifier le composant ProductSearch pour utiliser la recherche
+j’ai géré l’état de la recherche dans le composant parent. J’ai d’abord utilisé useState dans le composant parent pour stocker la valeur de l’input de recherche. Cette valeur est ensuite transmise au composant ProductSearch via une prop. Là, je capture la saisie de l’utilisateur et je mets à jour l’état de la recherche dans le parent à l’aide de setProductsearchValue que je transmets également en prop. Ensuite, cette valeur de recherche est envoyée à ProductList ou je filtrais les produits basés sur la recherche, pour s’assurer qu’il n’y est que les produits correspondants, je modifie l’affichage 
+
 Expliquez votre solution ici
 [Ajoutez vos captures d'écran]
 ```
+![Texte alternatif](src/images/exoOne.PNG)
 
 ### Exercice 2 : Context et Internationalisation
 #### Objectif : Gérer les préférences de langue
