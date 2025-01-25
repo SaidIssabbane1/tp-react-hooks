@@ -60,7 +60,7 @@ j’ai utilisé useEffect pour gérer le délai avant d’effectuer la recherche
 Expliquez votre solution ici
 [Ajoutez vos captures d'écran]
 ```
-![Texte alternatif](src/images/exoOneReact.png)
+![Texte alternatif](src/images/exoOneReact.PNG)
 
 ### Exercice 2 : Context et Internationalisation
 #### Objectif : Gérer les préférences de langue
@@ -83,7 +83,7 @@ Les composants enfants utilisent LanguageContext pour accéder à la langue sél
 Expliquez votre solution ici
 [Ajoutez vos captures d'écran]
 ```
-![Texte alternatif](src/images/exo2.PNG)
+![Texte alternatif](src/images/exo2.png)
 
 ### Exercice 3 : Hooks Personnalisés
 #### Objectif : Créer des hooks réutilisables
