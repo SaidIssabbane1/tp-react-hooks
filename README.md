@@ -60,7 +60,7 @@ j’ai utilisé useEffect pour gérer le délai avant d’effectuer la recherche
 Expliquez votre solution ici
 [Ajoutez vos captures d'écran]
 ```
-![Texte alternatif](src/images/exoOneReact.PNG)
+![Texte alternatif](src/images/exoOneReact.png)
 
 ### Exercice 2 : Context et Internationalisation
 #### Objectif : Gérer les préférences de langue
