@@ -3,6 +3,7 @@ import ProductList from "./components/ProductList";
 import ProductSearch from "./components/ProductSearch";
 import ThemeToggle from "./components/ThemeToggle";
 import LanguageSelector from "./components/LanguageSelector";
+import { useLocalStorage } from "./hooks/useProductSearch";
 
 // TODO: Exercice 2.1 - Créer le LanguageContext
 export const LanguageContext = createContext();
@@ -14,7 +15,8 @@ const App = () => {
   const [productSearchValue, setProductSearchValue] = useState("");
   // TODO: Exercice 2.2 - Ajouter l'état pour la langue
   const languages = ["FR", "EN"];
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
+  const [ selectedLanguage  ,   setSelectedLanguage  ] = useLocalStorage("language","FR")
+  
   return (
     <ThemeContext.Provider value={{ isDarkTheme, setIsDarkTheme }}>
       {/* TODO: Exercice 2.1 - Wrapper avec LanguageContext.Provider */}

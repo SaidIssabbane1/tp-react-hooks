@@ -1,5 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { LanguageContext, ThemeContext } from '../App';
+import { useDebounce } from '../hooks/useProductSearch';
 
 const ProductSearch = ({ setProductSearchValue }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -8,15 +9,20 @@ const ProductSearch = ({ setProductSearchValue }) => {
   const{selectedLanguage} = useContext(LanguageContext);
   
   // TODO: Exercice 1.2 - Utiliser le hook useDebounce
+  const debouncedValue = useDebounce(searchTerm,500);
+  
+  useEffect(()=>{
+    setProductSearchValue(debouncedValue)
+  },[setProductSearchValue,debouncedValue])
 
-  useEffect(() => {
-    const handler = setTimeout(() => {
-      setProductSearchValue(searchTerm);
-    }, 500);
-    return () => {
-      clearTimeout(handler);
-    };
-  }, [searchTerm, setProductSearchValue]);
+  // useEffect(() => {
+  //   const handler = setTimeout(() => {
+  //     setProductSearchValue(searchTerm);
+  //   }, 500);
+  //   return () => {
+  //     clearTimeout(handler);
+  //   };
+  // }, [searchTerm, setProductSearchValue]);
   
   return (
     <div className="mb-4">

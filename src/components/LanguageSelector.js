@@ -6,7 +6,8 @@ const LanguageSelector = () => {
     return ( 
         <div>
             <select className='form-select' value={selectedLanguage} name="" id="" onChange= {(e)=>{
-                            setSelectedLanguage(e.target.value)}
+                            setSelectedLanguage(e.target.value)
+                            }
                         }>
                 {
                     languages.map((language,index) =>(

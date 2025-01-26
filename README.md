@@ -60,7 +60,7 @@ j’ai utilisé useEffect pour gérer le délai avant d’effectuer la recherche
 Expliquez votre solution ici
 [Ajoutez vos captures d'écran]
 ```
-![Texte alternatif](src/images/exoOneReact.PNG)
+![exo1](src/images/exoOneReact.PNG)
 
 ### Exercice 2 : Context et Internationalisation
 #### Objectif : Gérer les préférences de langue
@@ -83,7 +83,7 @@ Les composants enfants utilisent LanguageContext pour accéder à la langue sél
 Expliquez votre solution ici
 [Ajoutez vos captures d'écran]
 ```
-![Texte alternatif](src/images/exo2.PNG)
+![exo2](src/images/exo2.png)
 
 ### Exercice 3 : Hooks Personnalisés
 #### Objectif : Créer des hooks réutilisables
@@ -94,9 +94,15 @@ Expliquez votre solution ici
 
 _Votre réponse pour l'exercice 3 :_
 ```
+3.1
+J'ai créé un hook personnalisé useDebounce pour retarder la mise à jour d'une valeur, comme un terme de recherche. Ce hook prend une valeur et un délai en millisecondes, puis utilise setTimeout pour appliquer le délai avant de mettre à jour la valeur. Grâce à useEffect, le timer redémarre chaque fois que la valeur ou le délai change, évitant ainsi des appels trop fréquents à la fonction de recherche. Cela améliore les performances lors de saisies rapides.
+3.2
+Pour synchroniser un état avec le localStorage, j'ai créé le hook personnalisé useLocalStorage. Ce hook prend une clé et une valeur initiale. Si une valeur est déjà présente dans le localStorage, elle est utilisée comme état initial, sinon la valeur par défaut est appliquée. À chaque mise à jour de l'état, la nouvelle valeur est automatiquement enregistrée dans le localStorage, garantissant la persistance des données même après un rechargement de la page.
+
 Expliquez votre solution ici
 [Ajoutez vos captures d'écran]
 ```
+![exo3](src/images/exo3.PNG)
 
 ### Exercice 4 : Gestion Asynchrone et Pagination
 #### Objectif : Gérer le chargement et la pagination
