@@ -113,9 +113,21 @@ Expliquez votre solution ici
 
 _Votre réponse pour l'exercice 4 :_
 ```
+4.3
+J'ai ajouté un bouton "Recharger" dans le composant ProductList, qui, lorsqu'il est cliqué, relance la récupération des produits via la fonction fetchProducts, permettant ainsi de recharger les produits depuis l'API.
+
+Pour gérer l'état de chargement, un état loading affiche un spinner pendant que les données sont récupérées.
+
+Concernant la pagination, j'ai implémenté des états comme currentPage, itemsPerPage et totalProducts pour gérer la pagination. La fonction fetchProducts récupère les produits en fonction de la page actuelle, en ajustant l'URL avec les paramètres page et limit et skip.
+
+Des boutons "Précédent" et "Suivant" permettent de naviguer entre les pages. Ils sont désactivés lorsque la première ou la dernière page est atteinte, assurant ainsi une navigation fluide à travers les produits.
 Expliquez votre solution ici
 [Ajoutez vos captures d'écran]
 ```
+![exo4](src/images/4.1.PNG)
+![exo4](src/images/4.2.PNG)
+![exo4](src/images/4.2.2.PNG)
+
 
 ## Rendu
 
